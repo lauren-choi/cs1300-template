@@ -1,1 +1,77 @@
-/* Put your style information here! */
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+.highlight-1 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ffceb0 50%); 
+}
+.highlight-2 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #faf8a5 50%); 
+}
+.highlight-3 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #c7e6a8 50%); 
+}
+.highlight-4 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #a4eddc 50%); 
+}
+.highlight-5 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #e8ace2 50%); 
+}
+.highlight-6 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #edceea 50%); 
+}
+.highlight-7 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #d9c6f5 50%); 
+}
+.highlight-8 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #969fff 50%); 
+}
+
+.heading {
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+.section {
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+.statement {
+  font-weight: 500;
+}
+
+#interface_img {
+  max-width: 80vw;
+}
+
+.persona {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.persona-map {
+  margin: 2rem 3rem 0 0;
+  border: 1px grey solid;
+  min-width: 300px;
+  width: 40%;
+  height: 40%;
+}
+
+.storyboard_img {
+  border: 1px grey solid;
+  width: 25vw;
+}
+
+.col {
+  width: 25vw;
+  margin: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
