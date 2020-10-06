@@ -1,5 +1,6 @@
 body {
   font-family: 'DM Sans', sans-serif;
+  margin-bottom: 6rem;
 }
 
 h1, h2, h3, h4 {
@@ -9,14 +10,23 @@ h1, h2, h3, h4 {
 .highlight-1 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #ffceb0 50%); 
 }
+.highlight-15 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #fae4d7 50%); 
+}
 .highlight-2 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #faf8a5 50%); 
 }
 .highlight-3 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #c7e6a8 50%); 
 }
+.highlight-35 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #e6f2da 50%); 
+}
 .highlight-4 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #a4eddc 50%); 
+}
+.highlight-45 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #daebe6 50%); 
 }
 .highlight-5 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #e8ace2 50%); 
@@ -27,8 +37,11 @@ h1, h2, h3, h4 {
 .highlight-7 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #d9c6f5 50%); 
 }
+.highlight-75 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #e6dcf5 50%); 
+}
 .highlight-8 { 
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #969fff 50%); 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #edbbd4 50%); 
 }
 
 .heading {

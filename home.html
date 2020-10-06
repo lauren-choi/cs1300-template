@@ -5,61 +5,70 @@
     <title>CS1300: Personas & Storyboarding</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
     <div class="heading">
       <h1><span class="highlight-1">Personas & Storyboarding</span></h1>
-      <h3>CS1300 | Fall 2020</h3>
-      <p>This project was an in-depth look into researching user interfaces, creating personas, and designing storyboards.</p>
+      <h3><span class="highlight-15">CSCI 1300 | Fall 2020</span></h3>
+      <p>This project was an in-depth look into user interfaces, creating personas, and designing storyboards.</p>
     </div>
 
     <div class="section">
       <h2><span class="highlight-2">Overview</span></h2>
-      <p>For my interface, I chose a toaster oven in my family's kitchen. The toaster oven was designed to toast food that's too big for a regular vertical toaster; additionally, it provides the same functionality as an oven, but for smaller amounts of food. Its key components include a display with preset functions (eg. bake, broil, toast), temperature/time adjusters, a start/top button, an adjustable metal rack, and a metal tray.</p>
+      <p>For my interface, I chose a toaster oven in my family's kitchen. The toaster oven was designed to toast food that's too big for a regular vertical toaster. It provides the same functionality as an oven, but for smaller amounts of food. The key components include a display with preset functions (eg. bake, broil, toast), temperature/time adjusters, a start/stop button, an adjustable metal rack, and a metal tray.</p>
       <img id = "interface_img" src="toaster_oven.jpg">
     </div>
     <div class="section">
       <h2><span class="highlight-3">Observations</span></h2>
-      <p>To get a better idea of how users interacted with the toaster oven, I decided to observe three people: my mom, my dad, and two of my closest friends from high school. After watching them cook a variety of foods -- including toasting bread slices, baking brownies, and preparing baked salmon -- I took the following notes:</p>
+      <p>To get a better idea of how people interact with the toaster oven, I decided to observe three users: my mom, my dad, and two of my closest friends from high school. After watching them cook a variety of foods -- including toasting bread slices, baking brownies, and preparing baked salmon -- I took the following notes:</p>
 
-      <p class = "statement">All participants prepared the food they wanted to cook before interacting with the toaster oven.</p>
-      <ul>
-        <li>Most users spent 30-60 seconds examining the different options (present cooking times, labels, various doneness levels).</li>
-        <li>One user knew exactly what settings they wanted, so they didn't hesitate before putting the food in the oven.</li>
-      </ul>
-      <p class = "statement">The more complicated the dish, the longer users stared at the oven while it cooked.</p>
-      <ul>
-        <li>Bread/toast: people usually left the food in the oven, then immediately lost interest and/or got distracted.</li>
-        <li>Entrees/desserts: longer cooking time, but users came back to it more frequently and opened/closed the door to check doneness.</li>
-      </ul>
-      <p class = "statement">Most users didn't wait for the food to cool down after it was finished cooking.</p>
-      <ul>
-        <li>One user stopped the timer once it reached 10 seconds, saying it was "cooked through already anyways".</li>
-        <li>Most didn't even leave it on the tray, instead transferring the food (baked salmon) to a plate while it was still bubbling.</li>
-      </ul>
+      <div class="row">
+        <div class="col">
+          <p class = "statement"><span class="highlight-35">All participants prepared the food they wanted to cook before interacting with the toaster oven.</span></p>
+          <ul>
+            <li>Most users spent 30-60 seconds examining the different options (present cooking times, labels, various doneness levels).</li>
+            <li>One user knew exactly what settings they wanted, so they didn't hesitate before putting the food in the oven.</li>
+          </ul>
+        </div>
+  
+        <div class="col">
+          <p class = "statement"><span class="highlight-35">The more complicated the dish, the longer users stared at the oven while it cooked.</span></p>
+          <ul>
+            <li>Bread/toast: people usually left the food in the oven, then immediately lost interest and/or got distracted.</li>
+            <li>Entrees/desserts: longer cooking time, but users came back to it more frequently and opened/closed the door to check doneness.</li>
+          </ul>
+        </div>
+  
+        <div class="col">
+          <p class = "statement"><span class="highlight-35">Most users didn't wait for the food to cool down after it was finished cooking.</span></p>
+          <ul>
+            <li>One user stopped the timer once it reached 10 seconds, saying "ten seconds don't make too much of a difference."</li>
+            <li>Most people didn't even leave the food on the tray. One person transferred the food (baked salmon) to a plate while it was still bubbling.</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="section">
       <h2><span class="highlight-4">Interview Questions</span></h2>
-      <p>Next, I wanted to get an idea of what they thought of the interface. I asked them questions about the toaster oven as a whole rather than specific details to get a better idea of what they thought.</p>
+      <p>After getting a general idea of how people interacted with the interface, I wanted to hear people's thoughts on the toaster oven to see if how they act aligns with what they think. I asked each user ten questions about the toaster oven, then summarized my findings below:</p>
       <ol>
-        <li><p class = "statement">What's the first thing that comes to mind when you think of a toaster oven?</p>Most users mentioned bread. Some mentioned specific foods, such as breakfast sandwiches and brownies; others mentioned thinking of toaster oven-specific foods (aka foods that wouldn't fit in a regular toaster).</li>
-        <li><p class = "statement">What were your first impressions of this specific toaster oven?</p>The majority of interviewees emphasized the toaster oven's small size. Many also mentioned ease of use, with one person commenting on the stainless steel exterior.</li>
-        <li><p class = "statement">What do you typically use a toaster oven for, if at all?</p>All of the interviewees mentioned using a toaster oven for toasting bread or baking desserts. Some used the preset functions (eg. the "bagel" setting), while others preferred setting their own time and temperature.</li>
-        <li><p class = "statement">How often do you use a toaster oven?</p>75% of the interviewees used a toaster oven 1-2 times a month, typically for making breakfast. One person used a toaster oven every day for breakfast sandwiches.</li>
-        <li><p class = "statement">When you use a toaster oven, how long do you typically spend using it?</p>The answers to this question ranged from 1 minute to a few hours. All interviewees reported doing other things while waiting, especially for items that took longer to cook. The actual time spent interacting with the oven (eg. pushing buttons, turning dials) was minimal regardless of cooking time.</li>
-        <li><p class = "statement">Which interaction with the toaster oven feels the most intuitive?</p>The majority of interviewees expressed enthusiasm for the preset functions (eg. bake, toast, broil) despite possessing different comfort levels with toaster ovens. They mentioned that despite the range of functions, they felt it was fairly easy to configure their preferred settings.</li>
-        <li><p class = "statement">Which interaction with the toaster oven feels the least intuitive?</p>The answers for this question were varied. Some mentioned adjusting the time and temperature, since they don't state which dial direction increases or decreases the settings. Another user mentioned deciphering what each button means. Overall, the least intuitive function seemed to depend on the user's familiarity with toaster ovens.</li>
-        <li><p class = "statement">What do you like about this specific toaster oven?</p>The answers to this question were similar to users' responses for their first impressions of the toaster oven. Most expressed enthusiasm for the oven's smaller size, since it made it easier for them to cook individual meals. All participants appreciated being able to choose from a variety of preset functions.</li>
-        <li><p class = "statement">What do you dislike about this specific toaster oven?</p>Most users disliked the toaster oven's size; despite it being smaller than full-sized ovens, they felt that it was still too bulky and had awkward dimensions. One user reported burning themselves due to the toaster oven's low height, while another mentioned it taking up too much countertop space when not in use.</li>
-        <li><p class = "statement">If you could change one thing about this toaster oven, what would it be?</p>Most users wanted to change the aesthetics of the toaster oven. One user did not like the stainless steel, another wished it was easier to disassemble for cleaning. One user mentioned that the functions -- despite offering a range of options -- could be simplified more; for example, reducing "toast" and "bagel" to a single "bread" category.</li>
+        <li><p class = "statement"><span class="highlight-45">What's the first thing that comes to mind when you think of a toaster oven?</span></p>Most users mentioned bread. Some mentioned specific foods, such as breakfast sandwiches and brownies; others mentioned thinking of toaster oven-specific foods (aka foods that wouldn't fit in a regular toaster).</li>
+        <li><p class = "statement"><span class="highlight-45">What were your first impressions of this specific toaster oven?</span></p>The majority of interviewees emphasized the toaster oven's small size. Many also mentioned ease of use, with one person commenting on the aesthetics (specifically its stainless steel exterior).</li>
+        <li><p class = "statement"><span class="highlight-45">What do you typically use a toaster oven for, if at all?</span></p>All of the interviewees mentioned using a toaster oven for toasting bread or baking desserts. Some used the preset functions (eg. the "bagel" setting), while others preferred setting their own time and temperature.</li>
+        <li><p class = "statement"><span class="highlight-45">How often do you use a toaster oven?</span></p>75% of the interviewees used a toaster oven 1-2 times a month, typically for making breakfast. One person used a toaster oven every day for breakfast sandwiches, toast, and/or reheating biscuits.</li>
+        <li><p class = "statement"><span class="highlight-45">When you use a toaster oven, how long do you typically spend using it?</span></p>The answers to this question ranged from 1 minute to a few hours. All interviewees reported doing other things while waiting, especially for items that took longer to cook. The actual time spent interacting with the oven (eg. pushing buttons, turning dials) was minimal regardless of cooking time.</li>
+        <li><p class = "statement"><span class="highlight-45">Which interaction with the toaster oven feels the most intuitive?</span></p>The majority of interviewees expressed enthusiasm for the preset functions (eg. bake, toast, broil) despite possessing different comfort levels with toaster ovens. They mentioned that despite the range of functions, they felt it was fairly easy to configure their preferred settings.</li>
+        <li><p class = "statement"><span class="highlight-45">Which interaction with the toaster oven feels the least intuitive?</span></p>The answers for this question were varied. Some mentioned adjusting the time and temperature felt a little awkward, since there were no labels to indicate increasing/decreasing times/temperatures. Overall, the least intuitive function seemed to depend on the user's familiarity with toaster ovens.</li>
+        <li><p class = "statement"><span class="highlight-45">What do you like about this specific toaster oven?</span></p>The answers to this question were similar to users' responses for their first impressions of the toaster oven. Most expressed enthusiasm for the oven's smaller size, since it made it easier for them to cook individual meals. All participants appreciated being able to choose from a variety of preset functions.</li>
+        <li><p class = "statement"><span class="highlight-45">What do you dislike about this specific toaster oven?</span></p>Most users disliked the toaster oven's size; despite it being smaller than full-sized ovens, they felt that it was still too bulky and had awkward dimensions. One user reported burning themselves due to the toaster oven's low height, while another mentioned it taking up too much countertop space when not in use.</li>
+        <li><p class = "statement"><span class="highlight-45">If you could change one thing about this toaster oven, what would it be?</span></p>Most users wanted to change the aesthetics of the toaster oven. One user did not like the stainless steel, another wished it was easier to disassemble for cleaning. One user mentioned that the functions -- despite offering a range of options -- could be simplified more; for example, reducing "toast" and "bagel" to a single "bread" category.</li>
       </ol>
     </div>
     <div class="section">
       <h2><span class="highlight-5">Personas</span></h2>
-      <p>This was the exciting part: creating personas! For this section, I drew from the observations and interview questions to create two personas that represented toaster oven users.</p>
+      <p>After observing a few users, gathering their thoughts, and making a few observations of my own, I decided I had enough information to draw up two personas (this was the exciting part!). I tried to create personas that represented the entire user demographic, focusing specifically on modeling them after my observations.</p>
       <div class="persona">
         <img class = "persona-map" src="hannah.jpg">
         <div class = "persona-info">
@@ -77,7 +86,7 @@
         <div class="persona-info">
           <h3><span class="highlight-6">Experienced Ethan</span></h3>
           <h4>Description</h4>
-          <p>Experienced Ethan is a 50-year-old grandfather living in the suburbs of New Hampshire. He's a patient man who enjoys baking cookies when his grandchildren visit each month. Ethan lives in a small cottage with limited kitchen space, and he's very familiar with using a toaster oven.</p>
+          <p>Experienced Ethan is a 50-year-old grandfather living in the suburbs of New Hampshire. He's a patient man who enjoys baking cookies when his grandchildren visit each month. Ethan is very familiar with using a toaster oven, and he likes baking with it (even if it takes a few hours).</p>
           <h4>Interface Problems</h4>
           <p>As a frequent baker, Ethan is familiar with using a toaster oven; however, he only uses the "baking" function, so he's unfamiliar with the rest of the presets. Additionally, Ethan frequently burns himself taking out the cookies from the oven.</p>
           <h4>User Representation</h4>
@@ -87,8 +96,8 @@
     </div>
     <div class="section">
       <h2><span class="highlight-7">Storyboard</span></h2>
-      <p>Finally, I created a storyboard for one of my personas -- Hurried Hannah -- to get a full picture of what a typical interaction with the toaster oven might look like. To avoid stereotyping, I based my storyboard on actual observations from user research.</p>
-      <h3>Hurried Hannah</h3>
+      <p>After drawing up two personas, I chose one of them -- Hurried Hannah -- to create a storyboard of her interaction with the toaster oven. For this section, I found it helpful to continuously ask myself, "what would Hannah do?"</p>
+      <h3><span class="highlight-75">Hurried Hannah</span></h3>
       <div class="storyboard">
         <div class="row">
           <div class="col">
@@ -142,11 +151,13 @@
             <p>11) She slides into her seat and eats her toast right as her seminar begins. Breakfast is served!</p>
           </div>
         </div>
+
+        <p>This storyboard illustrates several points about Hannah: that she's impatient (she took out the toast early), she's chronically late (she barely made it to school on time), she's a new user (she was overwhelmed by the unfamiliar options), and she multitasks (she retrieved her keys while the toast was toasting).</p>
       </div>
     </div>
     <div class="section">
       <h2><span class="highlight-8">Conclusion</span></h2>
-      <p>In conclusion, I learned a lot about personas and storyboarding from this project. This was my first time observing people interacting with physical interface, and it was interesting breaking down key components of a physical interface versus screen interfaces (eg. a website or a mobile app). Overall, I think this project help me understand interfaces beyond their visual aesthetics, and I'm excited to continue learning how to build better user interfaces!</p>
+      <p>I think this project was a great exercise in learning what motivates people. I'd always thought of interfaces in context of websites and mobile apps; I'd never really thought of them in a physical context. This project helped me understand interfaces beyond screens and simple aesthetics, and I got hands-on experience dissecting what makes an interface an interface. I learned how to research users in context of their goals, motivations, and character, and I gained an exciting look into what makes people tick. Overall, I'm excited to apply what I've learned to future projects!</p>
     </div>
   </body>
 </html>
