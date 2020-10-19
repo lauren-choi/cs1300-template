@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Commissioner', sans-serif;
+  background-color: #FFFCF4;
 }
 
 h1, h2, h3 {
@@ -12,6 +13,7 @@ a {
 }
 
 a:hover {
+  cursor: pointer;
   text-decoration: none;
   color: #F0BF3B;
   transition: color 0.2s ease-in-out;
@@ -74,13 +76,26 @@ a:hover {
 }
 
 .button {
+  display: flex;
+  font-family: 'Commissioner', sans-serif;
   border: none;
-  color: white;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  cursor: pointer;
-  padding: 1rem 2.5rem;
+  width: 10rem;
+  height: 3rem;
   background-color: #FFD86F;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #FFE8AC;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:active {
+  background-color: #F0BF3B;
 }
 
 .categories {
@@ -94,11 +109,18 @@ a:hover {
   justify-content: center;
 }
 
+.bakery_label {
+  background-color: #FFFCF4;
+}
+
 .bakery_item {
+  display: flex;
+  flex-direction: column;
   margin: 2rem;
 }
 
 .category_img {
+  margin: 0 0 1rem 0;
   width: 10rem;
   height: auto;
 }
@@ -209,4 +231,8 @@ a:hover {
 
 .icon {
   margin: 0.5rem 1rem 0 0;
+}
+
+.icon:hover {
+  cursor: pointer;
 }
