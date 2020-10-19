@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.subheading {
+  color: #80775E;
+}
+
 a:hover {
   cursor: pointer;
   text-decoration: none;
@@ -43,7 +47,7 @@ a:hover {
   padding: 1rem;
 }
 
-#dropdown_icon {
+#dropdown_icon, #dropdown_menu {
   display: none;
 }
 
@@ -77,7 +81,7 @@ a:hover {
 }
 
 #about-text {
-  margin: 5rem;
+  margin: 3rem;
   width: 80vw;
   text-align: center;
 }
@@ -106,7 +110,7 @@ a:hover {
 }
 
 .categories {
-  margin: 5rem 2rem 5rem 2rem;
+  margin: 3rem 2rem 3rem 2rem;
   text-align: center;
 }
 
@@ -138,14 +142,14 @@ a:hover {
 
 .latest {
   background-color: #FFEDBD;
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 2rem 5rem 2rem;
+  margin: 0 2rem 3rem 2rem;
 }
 
 .overlay_container {
@@ -220,7 +224,7 @@ a:hover {
 }
 
 .locations {
-  padding: 5rem 1rem 5rem 1rem;
+  padding: 3rem 1rem 3rem 1rem;
   background-color: #FFD86F;
 }
 
@@ -229,6 +233,56 @@ a:hover {
   padding: 1rem;
   background-color: #FFFCF4;
   width: 14rem;
+}
+
+.location:hover {
+  cursor: pointer;
+}
+
+#colonnade_pin, #pelham_pin, #greystone_pin, #tuscaloosa_pin, #financial_center_pin, #huntsville_pin, #patton_creek_pin, #trussville_pin {
+  display: inline;
+  margin: 0 0.5rem 0 0;
+  color: black;
+}
+
+#colonnade:hover #colonnade_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
+}
+
+#pelham:hover #pelham_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
+}
+
+#greystone:hover #greystone_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
+}
+
+#tuscaloosa:hover #tuscaloosa_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
+}
+
+#financial_center:hover #financial_center_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
+}
+
+#huntsville:hover #huntsville_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
+}
+
+#patton_creek:hover #patton_creek_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
+}
+
+#trussville:hover #trussville_pin {
+  color: #806C38;
+  transition: color 0.2s ease;
 }
 
 .location_heading{
