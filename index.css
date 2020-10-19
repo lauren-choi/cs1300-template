@@ -47,18 +47,25 @@ a:hover {
 }
 
 #intro-img {
-  min-width: 325px;
-  min-height: 325px;
-  max-height: 975px;
-  max-width: 975px;
-  width: 80%;
-  height: auto;
+  max-width: 100vh;
+  min-height: 100vh;
 }
 
 #intro-text {
-  margin: 2rem;
+  margin: 2rem 3rem 2rem 3rem;
   max-width: 700px;
+}
 
+.about {
+  display: flex;
+  justify-content: center;
+  background-color: #FFEDBD;
+}
+
+#about-text {
+  margin: 5rem;
+  width: 80vw;
+  text-align: center;
 }
 
 .button {
@@ -69,4 +76,52 @@ a:hover {
   cursor: pointer;
   padding: 1rem 2.5rem;
   background-color: #FFD86F;
+}
+
+.categories {
+  margin: 5rem;
+  text-align: center;
+}
+
+.bakery {
+  display: flex;
+  justify-content: center;
+}
+
+.bakery_item {
+  margin: 2rem;
+}
+
+.category_img {
+  width: 10rem;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery_img {
+  margin: 0.5vh;
+}
+
+#img_1 {
+  height: 40vh;
+}
+
+.section_2_1 {
+  display: flex;
+}
+
+#img_2 {
+  height: 21.3vh;
+}
+
+#img_3, #img_4 {
+  height: 17.3vh;
+}
+
+#img_5 {
+  height: 40vh;
 }
