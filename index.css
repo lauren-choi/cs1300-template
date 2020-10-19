@@ -119,10 +119,20 @@ a:hover {
   margin: 2rem;
 }
 
-.category_img {
+.img_hover_wrapper {
   margin: 0 0 1rem 0;
   width: 10rem;
-  height: auto;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.img_hover_wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.img_hover_wrapper:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .gallery {
