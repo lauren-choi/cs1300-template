@@ -182,3 +182,31 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.footer {
+  color: white;
+  display: flex;
+  padding: 2rem 3rem 2rem 3rem;
+  background-color: #80775E;
+  justify-content: space-between;
+}
+
+.footer_left, .footer_right, .footer_row {
+  display: flex;
+}
+
+#footer_logo {
+  min-width: 4rem;
+  max-height: 4rem;
+  margin: 1rem 2rem 0 0;
+}
+
+.footer_col {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+.icon {
+  margin: 0.5rem 1rem 0 0;
+}
