@@ -79,12 +79,13 @@ a:hover {
 }
 
 .categories {
-  margin: 5rem;
+  margin: 5rem 2rem 5rem 2rem;
   text-align: center;
 }
 
 .bakery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -95,6 +96,10 @@ a:hover {
 .category_img {
   width: 10rem;
   height: auto;
+}
+
+.latest {
+  text-align: center;
 }
 
 .gallery {
