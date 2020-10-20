@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #bf5d21;
+  color: #858585;
   text-decoration: none;
 }
 
@@ -92,4 +92,19 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+.critique {
+  margin: 1rem;
+}
+
+.critique-img, .wireframe-img, .prototype-img, .style-guide-img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+
+.prototype, .wireframe {
+  display: flex;
+  flex-wrap: wrap;
 }
