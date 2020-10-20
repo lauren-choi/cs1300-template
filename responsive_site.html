@@ -22,7 +22,7 @@
         <a><i class="icon fas fa-user"></i></a>
         <a><i class="icon fas fa-shopping-bag"></i></a>
       </div>
-      <div id="dropdown_icon" onclick="myFunction()"><i class="fas fa-bars"></i></div>
+      <div id="dropdown_icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     </div>
 
     <div class="intro">
@@ -109,7 +109,6 @@
               </div>
             </div>
 
-            <!-- <img id="img_2" class="gallery_img" src="DSC_4887-2-1536x1126.jpg"> -->
             <div class="section_2_2">
               
               <div class="overlay_container">
@@ -126,8 +125,6 @@
                 </div>
               </div>
 
-              <!-- <img id="img_3" class="gallery_img" src="DSC_4905-2-1536x1252.jpg">
-              <img id="img_4" class="gallery_img" src="DSC_5508-2-1-1403x1536.jpg"> -->
             </div>
           </div>
 
@@ -138,7 +135,6 @@
             </div>
           </div>
 
-          <!-- <img id="img_5" class="gallery_img" src="DSC_4976-2-1199x1536.jpg"> -->
         </div>
       </div>
     </div>
@@ -214,7 +210,7 @@
     </div>
 
     <script>
-      function myFunction() {
+      function toggleMenu() {
         var x = document.getElementById("dropdown_menu");
         if (x.style.display === "none") {
           x.style.display = "flex";
