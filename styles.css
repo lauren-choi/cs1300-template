@@ -21,6 +21,9 @@ h1, h2, h3, h4 {
 .highlight-2 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #faf8a5 50%); 
 }
+.highlight-25 { 
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #f0ed5b 50%); 
+}
 .highlight-3 { 
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #c7e6a8 50%); 
 }
@@ -57,54 +60,34 @@ h1, h2, h3, h4 {
   margin: 2rem 4rem 2rem 4rem;
 }
 
-.statement {
-  font-weight: 500;
+.website {
+  width: 300px;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
 }
 
-#interface_img {
-  max-width: 80vw;
-}
-
-.persona {
-  display: flex;
-  margin-bottom: 4rem;
-}
-
-.persona-map {
-  margin: 2rem 3rem 0 0;
-  border: 1px grey solid;
-  min-width: 300px;
-  width: 40%;
-  height: 40%;
-}
-
-.storyboard_img {
-  border: 1px grey solid;
-  width: 25vw;
-}
-
-.col {
-  width: 25vw;
-  margin: 1rem;
-}
-
-.row {
+.versions {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
 }
 
-.critique {
-  margin: 1rem;
-}
-
-.critique-img, .wireframe-img, .prototype-img, .style-guide-img {
-  max-width: 100%;
-  height: auto;
-  margin: 1rem;
-}
-
-.prototype, .wireframe {
+.hypotheses {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hypothesis {
+  width: 30%;
+  margin: 1rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin: none;
+}
+
+#infographic {
+  width: 500px;
 }

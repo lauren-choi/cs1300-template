@@ -2,77 +2,106 @@
 
 <html>
   <head>
-    <title>CS1300: Responsive Redesign</title>
+    <title>CS1300: A/B Testing</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio_styles.css">
+    <link rel="stylesheet" href="styles.css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
     <div class="heading">
-      <h1><span class="highlight-1">Responsive Redesign</span></h1>
+      <h1><span class="highlight-1">A/B Testing</span></h1>
       <h3><span class="highlight-15">CSCI 1300 | Fall 2020</span></h3>
-      <p>For this project, I redesigned the homepage for Edgar's Bakery: a pastry shop in my hometown that my high school friends and I liked visiting. I created lo-fi wireframes in Balsamiq, hi-fi prototypes in Adobe XD, and a responsive site implementation in HTML/CSS/JavaScript.</p>
-      <p><a href="responsive_site.html" target="_blank">Here's</a> the interactive website.</p>
+      <p>What makes one website better than another? Is it something tangible, like color? Is it the layout? Or is it something more?</p>
+      <p>For this project, I designed two versions of a cactus e-commerce website to conduct an A/B test. To measure how differently users responded, I created a Python script to calculate time to completion (t-test) and return rate (chi-squared test).</p>
+      <p><a href="https://calm-reef-00329.herokuapp.com" target="_blank">Here's</a> the link to the website (note: versions are randomized on page load).</p>
     </div>
 
     <div class="section">
-      <h2><span class="highlight-2">Identifying Issues</span></h2>
-      <p>First, I identified interface issues with the original website interface (original website <a href="https://edgarsbakery.com" target="_blank">here</a>). These were the four criteria I measured:</p>
-      <ol>
-        <li><b>Usability:</b> how easy to use is the website? How intuitive is the interface?</li>
-        <li><b>Learnability:</b> is the page well-organized? Does this layout make sense without text? Is there a clear hierarchy?</li>
-        <li><b>Memorability:</b> does the page make visual sense? How cohesive is the color scheme? Is there definite contrast with clear grouping?</li>
-        <li><b>Accessibility:</b> is the webpage user-friendly for everyone? How compatible is it with screen-readers?</li>
-      </ol>
-      <p>Here were my main findings:</p>
-      <div class="critique">
-        <img class="critique-img" src="edgars_critique_1.jpg">
-        <img class="critique-img" src="edgars_critique_2.jpg">
-        <img class="critique-img" src="edgars_critique_3.jpg">
-        <p>I also used WebAIM WAVE and my computer's built-in screenreader to detect accessibilty issues.</p>
-        <img class="critique-img" src="edgars_critique_4.jpg">
+      <h2><span class="highlight-2">A versus B</span></h2>
+      <p>First, I created two different versions of the same website.</p>
+
+      <div class="versions">
+        <div class="version" id="A">
+          <h3><span class="highlight-25">Version A</span></h3>
+          <img class="website" src="verA.png">
+        </div>
+  
+        <div class="version" id="A">
+          <h3><span class="highlight-25">Version B</span></h3>
+          <img class="website" src="verB.png">
+        </div>
+      </div>
+
+      <p>The main differences between the two pages were (1) layout and (2) checkout button location.</p>
+      <ul>
+        <li><b>Layout:</b> For version A, I laid out the cacti in a vertical scrolling format. In contrast, for version B, I organized the cacti in a grid. This was to see if a spread-out layout versus a grid layout affected time to completion, since the spacing (theoretically) woudl influence how long it took to digest the data.</li>
+        <li><b>Checkout Button:</b> For version A, I put the shopping cart at the bottom of the page. For version B, I put it at the top of the page with the heading. This was to see if the location of the shopping cart (which reminds users they have to check out at some point) affected how many items they put in their cart (and thus the return rate if they didn't put enough).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="highlight-3">Hypotheses</span></h2>
+      <p>Based on the two versions I created, I developed a set of hypotheses for each of the measurements (time to completion and return rate).</p>
+
+      <div class="hypotheses">
+        <div class="hypothesis">
+          <h3><span class="highlight-35">Time to Completion</span></h2>
+          <ul>
+            <li><b>Null hypothesis:</b> There will be no difference in the time to completion between Version A and Version B.</li>
+            <li><b>Alternative Hypothesis:</b> Version B will have a slightly faster time to completion. This is because Version B's grid layout lets users digest more information at once, rather than having to scroll up and down the page. Additionally, Version B has a more prominent shopping cart location, allowing users to access the checkout page faster.</li>
+          </ul>
+        </div>
+        <div class="hypothesis">
+          <h3><span class="highlight-35">Return Rate</span></h2>
+          <ul>
+            <li><b>Null hypothesis:</b> There will be no difference in the return rate between Version A and Version B.
+            </li>
+            <li><b>Alternative Hypothesis:</b> Version B will have a slightly higher return rate. This is because Version B's grid layout lets users see all their options at a glance, which increases memorability and learnability. Additionally, Version B has a slightly more compacted view, providing an easier interface for users to add items to their cart without scrolling up and down.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="section">
-      <h2><span class="highlight-3">Lo-fi Wireframes</span></h2>
-      <p>After critiquing the original website, I created three low-fidelity wireframes (desktop, tablet, and mobile views) to address key usability issues.</p>
-
-      <div class="wireframe">
-        <img class="wireframe-img" src="lofi_desktop_annotated.jpg">
-        <img class="wireframe-img" src="lofi_mobile_tablet_annotated.jpg">
-      </div>
+      <h2><span class="highlight-4">Data Collection Process</span></h2>
+      <p>I experienced a slight mishap during data collection -- I forked the wrong template repo, so I didn't have Flask/Heroku embedded in my website during our class's group data collection. As a result, I had trouble fulfilling the 40-user quota; however, I tried to make up for it by sending my website link to my high school friends, my college friends, my family, and posting on Piazza.</p>
     </div>
 
     <div class="section">
-      <h2><span class="highlight-4">Hi-fi Prototypes</span></h2>
-      <p>Using the wireframes as a basis, I then created a set of high-fidelity prototypes (desktop, tablet, and mobile views) to emulate a website. <a href="https://xd.adobe.com/view/c612b97d-79b2-4c75-9e92-e6ca0ab04911-9341/" target="_blank">Here's</a> the link to the full prototypes.</p>
-
-      <div class="prototype">
-        <img class="prototype-img" src="hifi_desktop_annotated.jpg">
-        <img class="prototype-img" src="hifi_mobile_tablet_annotated.jpg">
-      </div>
+      <h2><span class="highlight-5">Calculations</span></h2>
+      <p>For my calculations, I implemented a Python script to calculate the t-score and chi-square value (as well as their p-values) based on a list of data points: one for time to completion, and one for return rate.</p>
+      <p>To calculate time to completion, I subtracted the initial page load timestamp from the timestamp of the last page the user visited. I accounted for edge cases like revisiting the same page twice, and I filtered out invalid users.</p>
+      <p>To calculate return rate, I counted the number of users who returned and didn't return to the original page after checking out. I also separated them by version A and version B in order to get separate return rates for each version.</p>
     </div>
 
     <div class="section">
-      <h2><span class="highlight-5">Style Guide</span></h2>
-      <p>While developing the high-fidelity prototypes, I also created a UI design style guide to display the main color palette, specify typography, and illustrate visual states for each interactive element.</p>
+      <h2><span class="highlight-7">Results</span></h2>
+      <h3><span class="highlight-75">Results</span></h3>
+      <p>The t-test for time to completion produced a p-value of 0.31651, which was greater than my significance level of 0.05. Based on this statistically insignificant information, I failed to reject the null hypothesis; in other words, I accepted that version A and version B have no difference in time to completion.</p>
+      <p>The chi-2 test for return rate produced a p-value of 0.03389, which was less than my significance level of 0.05. Based on this statistically significant information, I rejected the null hypothesis; in other words, I accepted that version B has a higher return rate than version A.</p>
 
-      <div class="style-guide">
-        <img class="style-guide-img" src="style_guide.jpg">
-      </div>
-    </div>
+      <h3><span class="highlight-75">Infographic</span></h3>
+      <p>Using my results, I then designed an infographic to create a visual representation of my A/B testing results.</p>
+      <img src="AB-testing-infographic.svg" id="infographic">
 
-    <div class="section">
-      <h2><span class="highlight-7">Responsive Website</span></h2>
-      <p>Finally, I coded the newly-designed homepage in HTML/CSS/JavaScript. For this section, I utilized Chrome Developer Tools to ensure responsiveness across desktop, tablet, and mobile views.</p>
-      <p><a href="responsive_site.html" target="_blank">Here's</a> the link to the responsive webapge. All images and content are from the original Edgar's Bakery website <a href="https://edgarsbakery.com" target="_blank">here</a>.</p>
+      <h3><span class="highlight-75">Limitations and Implications</span></h3>
+      <p>I also identified the limitations of my user study and what the results told me about design principles in general.</p>
+      <p><b>Limitations</b></p>
+      <ul>
+        <li><b>Small sample size:</b> the development error prevented me from reaching 40 users, but I would have liked a larger sample size to avoid possibly skewing the data.</li>
+      </ul>
+      <p><b>Implications</b></p>
+      <ul>
+        <li><b>Return rate is based on presentation, not content.</b> Version A and version B contained the exact same information. The only difference was in presentation; version B had a slightly compacted grid layout (allowing users to digest information at a glance), while version A leaned more towards a scrolling layout. I believe return rate -- the user's willingness to further explore a page -- depended heavily on memorability, and because version B had a higher return rate, I've learned presentation and first impressions influence users more than I thought.</li>
+        <li><b>Navigation has little to no effect on time to completion.</b>  I was surprised that time to completion produced statistically insignificant results -- I thought version B would be a shoo-in for faster time to completion, especially since everything was so compacted. However, my results helped me realize that at the end of the day, ease of navigation can only get you so far. Instead, what impacts time to completion is content: how much information do users have to digest?</li>
+      </ul>
     </div>
 
     <div class="section">
       <h2><span class="highlight-8">Conclusion</span></h2>
-      <p>Overall, this project taught me how to approach UX design in a methodical, step-by-step process. Each stage gave me a deeper understanding of the original interface, and I've realized the value of lo-fi wireframing for brainstorming and hi-fi prototyping for development. I liked how this project was an exercise in both coding and design, and I especially liked working with Chrome Developer Tools.</p>
+      <p>Overall, this project was a great exercise in the quantitative side of user research. Until now, I'd only experienced the qualitiative aspect of UIUX (prototyping, sketching, sending surveys, etc.), so I enjoyed learning how numbers and statistics measure user experience. It's hard to quantify something like "what makes this website better than the other?", and A/B testing definitely removes some of that mystery.</p>
     </div>
   </body>
 </html>
